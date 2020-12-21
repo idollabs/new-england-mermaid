@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New England Mermaid</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="topLogo">
+      <h1>New England Mermaid</h1>
+      <div class="gradiant"></div>
+    </div>
+
+    <header class="header">
+      <div class="headerNav">
+        <ul>
+          <li>
+            <h4 class="navBtn">Home</h4>
+          </li>
+          <li>
+            <h4 class="navBtn">About</h4>
+          </li>
+          <li>
+            <h4 class="navBtn">Blogs</h4>
+          </li>
+          <li>
+            <h4 class="navBtn">Contact</h4>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- short about -->
+    <article class="shortAbout">
+      <div class="imgContainer">
+        <img src="" alt="" />
+      </div>
+      <div class="textContainer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dicta at
+          veritatis aliquam iure tenetur officiis? Maiores ipsum aliquid modi.
+        </p>
+      </div>
+    </article>
+
+    <!-- blog grid -->
+    <div class='parent'>
+        <div
+          class='child1'
+          key={1}
+          onMouseEnter={() => handleBlogInfo(1)}
+          onMouseLeave={() => handleBlogInfo(1)}
+        >
+          <img class='gridImg' src={image[0]} />
+          <article class='overLap'>
+            <h1>{info1}</h1>
+          </article>
+        </div>
+        <div class='child1B'></div>
+        <div
+          class='child2'
+          key={2}
+          onMouseEnter={() => handleBlogInfo(2)}
+          onMouseLeave={() => handleBlogInfo(2)}
+        >
+          <article class='overLap'>
+            <h1>{info2}</h1>
+          </article>
+        </div>
+        <div class='child2B'></div>
+
+        <div
+          class='child3'
+          key={3}
+          onMouseEnter={() => handleBlogInfo(3)}
+          onMouseLeave={() => handleBlogInfo(3)}
+        >
+          <article class='overLap'>
+            <h1>{info3}</h1>
+          </article>
+        </div>
+        <div class='child3B'></div>
+      </div>
+
+
+<!-- javascript src -->
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

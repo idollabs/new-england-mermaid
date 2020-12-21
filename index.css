@@ -139,6 +139,7 @@ header .headerNav {
 
 header .headerNav ul {
   display: flex;
+  height: 3rem;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -146,13 +147,24 @@ header .headerNav ul {
 }
 
 header .headerNav .navBtn {
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   height: 2rem;
   width: 14vw;
   height: 3rem;
-  border-left-style: solid;
+  /* border-left-style: solid;
   border-right-style: solid;
-  border-width: 2px;
+  border-width: 2px; */
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+header .headerNav .navBtn img {
+  position: relative;
+  top: 50%;
+  margin-left: -0.6rem;
+  height: 40px;
 }
 
 @media screen and (max-width: 700px) {
@@ -175,13 +187,13 @@ header .headerNav .navBtn {
   margin-right: 1%;
   padding: 1rem;
   background-color: var(--clr-intro-1);
-  border-radius: 5%;
+  /* border-radius: 5%; */
 }
 
 .shortAbout .imgContainer img {
   height: 10rem;
   width: 20rem;
-  border-radius: 8%;
+  /* border-radius: 8%; */
 }
 
 .shortAbout .textContainer {
@@ -191,7 +203,7 @@ header .headerNav .navBtn {
   margin-right: 2%;
   padding: 1rem;
   background-color: var(--clr-intro-1);
-  border-radius: 5%;
+  /* border-radius: 5%; */
 }
 
 @media screen and (max-width: 800px) {

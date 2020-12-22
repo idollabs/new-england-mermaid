@@ -29,17 +29,22 @@
               </div>
             </div>
           </li>
+          <div class="dropdown">
+            <button class="dropbtn">About</button>
+            <div class="dropdown-content">
+              <img src="images/front-door.jpg" alt=""/>
+            </div>
+          </div>
           <li>
-            <h4 class="navBtn">ABOUT<img src="/images/mermaidtailclipart40px.png" alt="">
-            </h4></h4>
+           
           </li>
           <li>
-            <h4 class="navBtn">BLOGS<img src="/images/mermaidtailclipart40px.png" alt="">
-            </h4></h4>
+            <!-- <h4 class="navBtn">BLOGS<img src="/images/mermaidtailclipart40px.png" alt="">
+            </h4></h4> -->
           </li>
           <li>
-            <h4 class="navBtn">CONTACT<img src="/images/mermaidtailclipart40px.png" alt="">
-            </h4></h4>
+            <!-- <h4 class="navBtn">CONTACT<img src="/images/mermaidtailclipart40px.png" alt="">
+            </h4></h4> -->
           </li>
         </ul>
       </div>
@@ -50,7 +55,8 @@
     <!-- short about -->
     <article class="shortAbout">
       <div class="imgContainer">
-        <img src="" alt="" />
+        <img id="imgRect" src="images/mermaidpicrect.jpg" alt="" />
+        <img id="imgSquare" src="images/mermaidpic.jpg" alt="" />
       </div>
       <div class="textContainer">
         <p>
@@ -63,7 +69,7 @@
     <!-- blog grid -->
     <div class='parent'>
         <div
-          class='child1'
+          class='child'
           key={1}
           onMouseEnter={() => handleBlogInfo(1)}
           onMouseLeave={() => handleBlogInfo(1)}
@@ -73,9 +79,9 @@
             <h1>{info1}</h1>
           </article>
         </div>
-        <div class='child1B'></div>
+        <div class='childB'></div>
         <div
-          class='child2'
+          class='child'
           key={2}
           onMouseEnter={() => handleBlogInfo(2)}
           onMouseLeave={() => handleBlogInfo(2)}
@@ -84,10 +90,10 @@
             <h1>{info2}</h1>
           </article>
         </div>
-        <div class='child2B'></div>
+        <div class='childB'></div>
 
         <div
-          class='child3'
+          class='child'
           key={3}
           onMouseEnter={() => handleBlogInfo(3)}
           onMouseLeave={() => handleBlogInfo(3)}
@@ -96,7 +102,7 @@
             <h1>{info3}</h1>
           </article>
         </div>
-        <div class='child3B'></div>
+        <div class='childB'></div>
       </div>
 
       <!-- footer -->

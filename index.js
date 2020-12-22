@@ -1,40 +1,29 @@
 //Blog Grid
 
-const originColor1 = $('.child1').css('background-color');
+const originColor1 = $('.child').css('background-color');
 
-let isGridChange1 = false;
-let isGridChange2 = false;
-let isGridChange3 = false;
+let isGridChange = [];
+const classLength = document.getElementsByClassName('child').length;
+
+for (let i = 0; i < classLength; i++) {
+  isGridChange.push(false);
+}
 
 const handleBlogInfo = (itemKey) => {
-  if (itemKey == 1) {
-    if (!isGridChange1) {
-      $('.child1').css('background-color', 'yellow');
-      isGridChange1 = true;
-    } else {
-      $('.child1').css('background-color', originColor1);
-      isGridChange1 = false;
-    }
-  }
-  if (itemKey == 2) {
-    if (info2 === '') {
-      setInfo2('hover worked');
-    } else {
-      setInfo2('');
-    }
-  }
-  if (itemKey == 3) {
-    if (info3 === '') {
-      setInfo3('hover worked');
-    } else {
-      setInfo3('');
-    }
+  if (!isGridChange[itemKey]) {
+    $('.child').eq(itemKey).css('background-color', 'yellow');
+    isGridChange[itemKey] = true;
+  } else {
+    $('.child').eq(itemKey).css('background-color', originColor1);
+    isGridChange[itemKey] = false;
   }
 };
 
-$('.child1').on('mouseenter', function () {
-  handleBlogInfo(1);
+let gridChild = $('.child');
+
+gridChild.on('mouseenter', function () {
+  handleBlogInfo(0);
 });
-$('.child1').on('mouseleave', function () {
-  handleBlogInfo(1);
+gridChild.on('mouseleave', function () {
+  handleBlogInfo(0);
 });

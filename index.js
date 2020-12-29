@@ -22,18 +22,18 @@ const handleBlogInfo = (itemKey) => {
 let gridChild = $('.child');
 
 gridChild.on('mouseenter', function () {
-  handleBlogInfo(0);
+  handleBlogInfo(gridChild.index(this));
 });
 gridChild.on('mouseleave', function () {
-  handleBlogInfo(0);
+  handleBlogInfo(gridChild.index(this));
 });
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
+const hamToggle = () => {
   var x = document.getElementById('myLinks');
   if (x.style.display === 'block') {
     x.style.display = 'none';
   } else {
     x.style.display = 'block';
   }
-}
+};

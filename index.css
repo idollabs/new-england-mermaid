@@ -1,6 +1,6 @@
 :root {
   /* dark shades of primary color*/
-  --clr-background-1: rgb(186, 202, 145);
+  --clr-background-1: #f4f4f4;
   --clr-header-1: #9901ff;
   --clr-navbar-1: #f4f4f4;
   --clr-navbar-2: rgb(57, 113, 146);
@@ -9,7 +9,7 @@
   --clr-intro-1: rgb(228, 213, 178);
   --clr-intro-border-1: rgb(144, 225, 253);
   --clr-border-1: #9901ff;
-  --clr-footer-1: #f4f4f4;
+  --clr-footer-1: rgb(57, 113, 146);
 
   /* grayscale pallette */
   --clr-white-1: #ffffff;
@@ -68,6 +68,24 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -3rem; /* equal to footer height */
+}
+.page-wrap:after {
+  content: '';
+  display: block;
+}
+
+main {
+  display: block;
+}
+
 /* header */
 header {
   position: sticky;
@@ -124,7 +142,7 @@ header {
 header .headerNav {
   display: block;
   height: 3rem;
-  background-color: var(--clr-navbar-1);
+  background-color: var(--clr-navbar-2);
 
   /*Position*/
 }
@@ -173,6 +191,7 @@ header .headerNav .navBtn img {
   border: none;
   cursor: pointer;
   width: 10rem;
+  height: 3rem;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -272,8 +291,6 @@ header .headerNav .navBtn img {
   }
   header .headerNav {
     display: none;
-
-    /*Position*/
   }
 }
 
@@ -496,12 +513,16 @@ footer {
   height: 3rem;
   width: 100%;
   background-color: var(--clr-footer-1);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  position: relative;
-  bottom: 0;
+}
+
+footer,
+.page-wrap:after {
+  height: 3rem; /* .push must be the same height as footer */
 }
 
 @media screen and (max-width: 800px) {

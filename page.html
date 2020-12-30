@@ -16,7 +16,7 @@
     <article class="page-wrap">
       <!-- header -->
       <div class="topLogo">
-        <h1>New England Mermaid</h1>
+        <h1 id="siteName">New England Mermaid</h1>
         <!-- <div class="gradiant"></div>   -->
       </div>
 
@@ -25,22 +25,29 @@
           <ul>
             <li>
               <div class="dropdown">
-                <button class="dropbtn">Home</button>
+                <a href="index.html"> <button class="dropbtn">Home</button></a>
               </div>
             </li>
             <div class="dropdown">
               <button class="dropbtn">About</button>
+
               <div class="dropdown-content">
-                <img id="aboutDoor" src="images/front-door.jpg" alt="" />
+                <a href="about.html">
+                  <img id="aboutDoor" src="images/front-door.jpg" alt="Enter"
+                /></a>
               </div>
             </div>
             <li>
               <div class="dropdown">
                 <button class="dropbtn">Blogs</button>
                 <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a class="dropLink" href="#"
+                    >Link 1 sdzfsfdcgbfdsbf gbxdfbd</a
+                  >
+                  <a class="dropLink" href="#">Link 2</a>
+                  <a class="dropLink" href="#"
+                    >Link 3 dfzcxfdsbfxbf fgxxbdfsbd</a
+                  >
                 </div>
               </div>
             </li>
@@ -50,6 +57,21 @@
               </div>
             </li>
           </ul>
+        </div>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="#active">New England Mermaid</a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="hamToggle()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </header>
 

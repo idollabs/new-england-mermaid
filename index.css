@@ -118,7 +118,8 @@ header {
       rgba(245, 246, 252, 0),
       rgba(255, 255, 255, 0.73)
     ),
-    url('images/mermaidpicrect.jpg');
+    url('images/Wave-at-Hampton-Beach.jpg');
+  background-position: center;
   background-size: cover;
 }
 
@@ -131,7 +132,7 @@ header {
 .topLogo h1 {
   color: white;
   font-size: 3rem;
-  text-shadow: 0.1rem 0.1rem black;
+  text-shadow: 0.1rem 0.1rem rgb(47, 94, 63);
   text-align: center;
 
   margin: auto;
@@ -326,12 +327,15 @@ intro */
   float: left;
   margin-top: 4vh;
   margin-right: 1.5rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
   box-shadow: -3vh -3vh var(--clr-navbar-2), 1vh 1vh var(--clr-intro-1);
 }
 
 .shortAbout {
   display: flex;
+  justify-content: center;
+  height: 27.8vw;
+
   background-color: var(--clr-background-1);
 }
 
@@ -345,12 +349,13 @@ intro */
   box-shadow: -0.7rem -0.7rem var(--clr-navbar-2);
   /* border-radius: 5%; */
   border-bottom-right-radius: 30%;
+  width: 50%;
 }
 
 .shortAbout .imgContainer img {
-  height: 10rem;
-  width: 20rem;
+  width: 100%;
   border-bottom-right-radius: 30%;
+  display: block;
 }
 
 #imgRect {
@@ -362,7 +367,7 @@ intro */
 }
 
 .shortAbout .textContainer {
-  margin-top: 3%;
+  /* margin-top: 3%;
   margin-bottom: 1%;
   margin-left: 1%;
   margin-right: 3%;
@@ -370,12 +375,32 @@ intro */
   background-color: var(--clr-intro-1);
   font-size: 3.3vw;
   box-shadow: 0.7rem -0.7rem var(--clr-navbar-2);
+  min-width: 300px;
+  height: 10rem;
 
+  border-bottom-left-radius: 30%; */
+  margin-top: 3%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 3%;
+  padding: 0.7rem;
+  background-color: var(--clr-intro-1);
+  box-shadow: 0.7rem -0.7rem var(--clr-navbar-2);
   /* border-radius: 5%; */
   border-bottom-left-radius: 30%;
+  width: 50%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
+  .shortAbout .imgContainer {
+    width: 20rem;
+  }
+  .shortAbout .textContainer {
+    width: 20rem;
+  }
+}
+
+/* @media screen and (max-width: 800px) {
   .shortAbout .imgContainer img {
     height: 10rem;
     width: 10rem;
@@ -402,7 +427,7 @@ intro */
   .shortAbout {
     font-size: 3.5vw;
   }
-}
+} */
 
 /* Blog Grid */
 

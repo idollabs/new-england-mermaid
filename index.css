@@ -56,6 +56,8 @@
   --clr-medium-grayish-blue-2: rgb(76, 141, 176);
   --clr-medium-grayish-blue: rgb(85, 156, 197);
   --clr-light-blue-1: rgb(144, 225, 253);
+
+  --transition: all 0.2s linear;
 }
 
 * {
@@ -116,7 +118,7 @@ header {
       to bottom,
       rgba(245, 246, 252, 0),
       rgba(245, 246, 252, 0),
-      rgba(255, 255, 255, 0.73)
+      rgb(255, 255, 255)
     ),
     url('images/Wave-at-Hampton-Beach.jpg');
   background-position: center;
@@ -239,10 +241,14 @@ header .headerNav .navBtn img {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+
+  animation: growDown 300ms ease-in-out forwards;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
+  transition: var(--transition);
+
   background-color: var(--clr-navbar-3);
 }
 
@@ -447,7 +453,7 @@ intro */
   height: 30.6vw;
   object-fit: cover;
   border-radius: 20%;
-  display: none;
+  display: block;
 }
 
 .parent .child {

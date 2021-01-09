@@ -23,25 +23,25 @@
   --clr-black-1: #000 c;
 
   /* pallette 1
-  --clr-peach-1: #fcd392;
-  --clr-salmon-1: #d97266;
-  --clr-pink-1: #df98f0;
-  --clr-purple-blue-1: #7e8bd9;
-  --clr-sky-blue-1: #7cfcf4; */
+    --clr-peach-1: #fcd392;
+    --clr-salmon-1: #d97266;
+    --clr-pink-1: #df98f0;
+    --clr-purple-blue-1: #7e8bd9;
+    --clr-sky-blue-1: #7cfcf4; */
 
   /* ocean pallette 1
-  --clr-dark-greenish-gray-1: #2b2f26;
-  --clr-dark-green-1: #4a5e56;
-  --clr-light-green-1: #bcc4a4;
-
-  --clr-light-tan-1: #d7d0bd;
-  --clr-medium-tan-1: #a57f5a;
-  --clr-dark-tan-1: #685c3d;
-
-  --clr-dark-grayish-blue: #4d6b7c;
-  --clr-medium-grayish-blue-2: #638598;
-  --clr-medium-grayish-blue: #6f93aa;
-  --clr-light-blue-1: #9cdaf0; */
+    --clr-dark-greenish-gray-1: #2b2f26;
+    --clr-dark-green-1: #4a5e56;
+    --clr-light-green-1: #bcc4a4;
+  
+    --clr-light-tan-1: #d7d0bd;
+    --clr-medium-tan-1: #a57f5a;
+    --clr-dark-tan-1: #685c3d;
+  
+    --clr-dark-grayish-blue: #4d6b7c;
+    --clr-medium-grayish-blue-2: #638598;
+    --clr-medium-grayish-blue: #6f93aa;
+    --clr-light-blue-1: #9cdaf0; */
 
   /* ocean pallette 2 */
   --clr-dark-greenish-gray-1: rgb(43, 51, 35);
@@ -98,7 +98,6 @@ header {
   position: sticky;
   width: 100%;
   top: 0;
-  z-index: 3;
 }
 
 .headerImg {
@@ -145,10 +144,10 @@ header {
   display: block;
   height: 8vw;
   /* background-image: linear-gradient(
-    180deg,
-    rgb(44, 44, 44, 0),
-    var(--clr-navbar-1)
-  ); */
+      180deg,
+      rgb(44, 44, 44, 0),
+      var(--clr-navbar-1)
+    ); */
 
   position: relative;
   top: -8.5rem;
@@ -267,8 +266,8 @@ header .headerNav .navBtn img {
 }
 
 /* ~
-~
-~ */
+  ~
+  ~ */
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
@@ -322,11 +321,11 @@ header .headerNav .navBtn img {
 }
 
 /* 
-~
-~
-~
-~
-intro */
+  ~
+  ~
+  ~
+  ~
+  intro */
 
 .aboutImg {
   display: block;
@@ -375,17 +374,17 @@ intro */
 
 .shortAbout .textContainer {
   /* margin-top: 3%;
-  margin-bottom: 1%;
-  margin-left: 1%;
-  margin-right: 3%;
-  padding: 0.7rem;
-  background-color: var(--clr-intro-1);
-  font-size: 3.3vw;
-  box-shadow: 0.7rem -0.7rem var(--clr-navbar-2);
-  min-width: 300px;
-  height: 10rem;
-
-  border-bottom-left-radius: 30%; */
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 3%;
+    padding: 0.7rem;
+    background-color: var(--clr-intro-1);
+    font-size: 3.3vw;
+    box-shadow: 0.7rem -0.7rem var(--clr-navbar-2);
+    min-width: 300px;
+    height: 10rem;
+  
+    border-bottom-left-radius: 30%; */
   margin-top: 3%;
   margin-bottom: 1%;
   margin-left: 1%;
@@ -408,33 +407,33 @@ intro */
 }
 
 /* @media screen and (max-width: 800px) {
-  .shortAbout .imgContainer img {
-    height: 10rem;
-    width: 10rem;
+    .shortAbout .imgContainer img {
+      height: 10rem;
+      width: 10rem;
+    }
+  
+    #imgRect {
+      display: none;
+    }
+  
+    #imgSquare {
+      display: block;
+    }
+  
+    .shortAbout {
+      font-size: 4vw;
+    }
   }
-
-  #imgRect {
-    display: none;
-  }
-
-  #imgSquare {
-    display: block;
-  }
-
-  .shortAbout {
-    font-size: 4vw;
-  }
-}
-
-@media screen and (max-width: 525px) {
-  .shortAbout .imgContainer img {
-    height: 7rem;
-    width: 7rem;
-  }
-  .shortAbout {
-    font-size: 3.5vw;
-  }
-} */
+  
+  @media screen and (max-width: 525px) {
+    .shortAbout .imgContainer img {
+      height: 7rem;
+      width: 7rem;
+    }
+    .shortAbout {
+      font-size: 3.5vw;
+    }
+  } */
 
 /* Blog Grid */
 
@@ -450,22 +449,23 @@ intro */
 }
 
 /* .parent .gridImg {
-  width: 30.6vw;
-  height: 30.6vw;
-  object-fit: cover;
-  border-radius: 20%;
-  display: block;
+    width: 30.6vw;
+    height: 30.6vw;
+    object-fit: cover;
+    border-radius: 20%;
+    display: block;
+  
+  } */
 
-} */
-
-.container {
-  width: 30.6vw;
-  height: 30.6vw;
-  border-radius: 20%;
+.child {
+  background-color: #91242446;
+  order: 1;
   flex: 0 0 auto;
+  /* margin: 1% 1%; */
+  border-radius: 20%;
 }
 
-.image {
+.gridImg {
   opacity: 1;
   display: block;
   width: 30.6vw;
@@ -475,26 +475,26 @@ intro */
   border-radius: 20%;
 }
 
-.middle {
+.overLap {
   transition: 0.5s ease;
   opacity: 0;
-  position: relative;
-  top: -50%;
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.container:hover .image {
+.child:hover .gridImage {
   opacity: 0.3;
 }
 
-.container:hover .middle {
+.child:hover .overLap {
   opacity: 1;
 }
 
-.text {
+.gridText {
   background-color: #4caf50;
   color: white;
   font-size: 16px;
@@ -503,6 +503,7 @@ intro */
 
 .parent .childB {
   display: none;
+
   background-color: #4b1212;
   order: 1;
   flex: 0 0 auto;
@@ -517,6 +518,23 @@ intro */
   border-radius: 20%;
 }
 
+@media screen and (min-width: 1130px) {
+  .parent .gridImg {
+    width: 21rem;
+    height: 21rem;
+  }
+
+  .parent .child {
+    width: 21rem;
+    height: 21rem;
+  }
+
+  .parent .childB {
+    width: 21rem;
+    height: 21rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .parent {
     height: 75vh;
@@ -524,16 +542,16 @@ intro */
     justify-content: center;
   }
 
-  .image {
+  .parent .gridImg {
     width: 15rem;
     height: 15rem;
     /* border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
-    border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%; */
+      border-bottom-left-radius: 20%;
+      border-top-right-radius: 0%;
+      border-bottom-right-radius: 0%; */
   }
 
-  .container {
+  .parent .child {
     width: 15rem;
     height: 15rem;
     margin: auto;
@@ -543,26 +561,26 @@ intro */
     margin-right: 1%;
 
     /* border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
-    border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%; */
+      border-bottom-left-radius: 20%;
+      border-top-right-radius: 0%;
+      border-bottom-right-radius: 0%; */
   }
 
   .parent .childB {
     display: block;
     /* border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%; */
+      border-bottom-left-radius: 0%;
+      border-top-right-radius: 20%;
+      border-bottom-right-radius: 20%; */
   }
 }
 
 @media screen and (max-width: 521px) {
-  .image {
+  .parent .gridImg {
     width: 12rem;
     height: 12rem;
   }
-  .container {
+  .parent .child {
     width: 12rem;
     height: 12rem;
   }
@@ -572,12 +590,12 @@ intro */
   }
 }
 @media screen and (max-width: 420px) {
-  .image {
+  .parent .gridImg {
     width: 10rem;
     height: 10rem;
   }
 
-  .container {
+  .parent .child {
     width: 10rem;
     height: 10rem;
   }

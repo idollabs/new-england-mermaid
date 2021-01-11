@@ -74,19 +74,19 @@ body {
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 .page-wrap {
   min-height: 100%;
-  margin-bottom: -3rem; /* equal to footer height */
-}
-.page-wrap:after {
-  content: '';
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 main {
   display: block;
+  flex-grow: 1;
 }
 
 .content {
@@ -114,7 +114,6 @@ header {
   justify-content: center;
   align-items: center;
   height: 13rem;
-  background-color: var(--clr-header-1);
   background-image: linear-gradient(
       to bottom,
       rgba(245, 246, 252, 0),
@@ -394,11 +393,15 @@ intro */
   width: 50%;
   max-width: 50rem;
   max-height: 25rem;
-  color: white;
-  text-shadow: 0.2vw 0.2vw var(--clr-navbar-2);
-  font-size: 4vw;
+  color: black;
+
   font-weight: bold;
   text-align: center;
+}
+
+.textContainer h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 5vw;
 }
 
 @media screen and (min-width: 2000px) {
@@ -455,7 +458,8 @@ intro */
 /* Blog Grid */
 
 .parent {
-  height: 50vh;
+  /* height: 50vh; */
+  height: 50vw;
   background-color: var(--clr-background-1);
   display: flex;
   justify-content: space-around;
@@ -491,10 +495,23 @@ intro */
   height: 30.6vw;
   max-height: 30rem;
   max-width: 30rem;
-
+  object-fit: cover;
   transition: 0.5s ease;
   backface-visibility: hidden;
   border-radius: 20%;
+}
+
+.defaultMiddle {
+  transition: 0.5s ease;
+  opacity: 1;
+  position: relative;
+  top: -50%;
+  left: 50%;
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .middle {
@@ -512,20 +529,73 @@ intro */
   opacity: 0.3;
 }
 
+.container:hover .defaultMiddle {
+  opacity: 0;
+  display: none;
+}
+
 .container:hover .middle {
   opacity: 1;
 }
 
+.defaultText {
+  background-color: #f4f4f4c7;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px white;
+  color: var(--clr-navbar-2);
+  font-size: 16px;
+  padding: 16px 33px;
+}
+
 .text {
-  background-color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-navbar-2);
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+  height: 5rem;
+}
+
+.gridBtn {
+  display: inline-block;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  background: var(--clr-navbar-3);
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: solid white 2px;
+  border-radius: 10%;
+}
+
+.gridBtn:hover,
+button:focus {
+  background: var(--clr-navbar-4);
+}
+
+.gridBtn:focus {
+  outline: 1px solid #fff;
+  outline-offset: -6px;
+}
+
+.gridBtn:active {
+  transform: scale(0.99);
 }
 
 .parent .childB {
   display: none;
-  background-color: #4b1212;
+  background-color: var(--clr-navbar-2);
 
   flex: 0 0 auto;
   width: 15rem;
@@ -539,9 +609,62 @@ intro */
   border-radius: 20%;
 }
 
+.container.mobileBioA {
+  display: none;
+  background-color: var(--clr-intro-1);
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 20%;
+  box-shadow: -1vw -1vw var(--clr-navbar-2);
+}
+
+.mobileBioImg {
+  opacity: 1;
+  display: block;
+  width: 30.6vw;
+  height: 30.6vw;
+  max-height: 30rem;
+  max-width: 30rem;
+
+  backface-visibility: hidden;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 20%;
+}
+
+.childB.mobileBioB {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+
+  background-color: var(--clr-intro-1);
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 0%;
+  box-shadow: 1vw -1vw var(--clr-navbar-2);
+}
+
+.childB.mobileBioB article {
+  width: 30vw;
+}
+
+.childB.mobileBioB h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 40px;
+}
+
 @media screen and (max-width: 790px) {
+  .shortAbout {
+    display: none;
+  }
+
   .parent {
-    height: 75vh;
+    /* height: 75vh; */
 
     justify-content: center;
   }
@@ -571,11 +694,28 @@ intro */
   }
 
   .parent .childB {
-    display: block;
+    display: flex;
+
     /* border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%; */
+  }
+
+  .container.mobileBioA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+  }
+  .childB.mobileBioB {
+    display: flex;
+    margin-top: 3%;
+  }
+
+  .mobileBioImg {
+    width: 14rem;
+    height: 14rem;
   }
 }
 
@@ -592,6 +732,11 @@ intro */
     width: 12rem;
     height: 12rem;
   }
+
+  .mobileBioImg {
+    width: 11rem;
+    height: 11rem;
+  }
 }
 @media screen and (max-width: 420px) {
   .image {
@@ -607,10 +752,25 @@ intro */
     width: 10rem;
     height: 10rem;
   }
+
+  .mobileBioImg {
+    width: 9rem;
+    height: 9rem;
+  }
 }
 
 /* footer */
+
+header,
+main,
 footer {
+  flex-shrink: 0;
+}
+
+footer {
+  /* position: absolute;
+  bottom: 0; */
+
   height: 3rem;
   width: 100%;
   background-color: var(--clr-footer-1);
@@ -621,12 +781,7 @@ footer {
   margin-top: 2rem;
 }
 
-footer,
-.page-wrap:after {
-  height: 3rem; /* .push must be the same height as footer */
-}
-
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   footer {
     margin-top: 17rem;
   }
@@ -645,4 +800,4 @@ footer,
   footer {
     margin-top: 32rem;
   }
-}
+} */

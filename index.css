@@ -650,6 +650,37 @@ button:focus {
   }
 }
 
+/* mobile stuff */
+.mobileContainer {
+  width: 31rem;
+  height: 15rem;
+  border: solid 0.45rem var(--clr-navbar-2);
+  border-radius: 3rem;
+  flex: 0 0 auto;
+}
+
+.mobileContainer,
+.mobileFirst {
+  border-radius: 0rem 0rem 3rem 3rem;
+}
+
+.mobileContainer .image {
+  opacity: 0.3;
+  display: block;
+  width: 31rem;
+  height: 15rem;
+  max-width: 31rem;
+  object-fit: cover;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 2.5rem;
+}
+
+.mobileContainer .image,
+.mobileFirstImg {
+  border-radius: 0rem 0rem 2.5rem 2.5rem;
+}
+
 @media screen and (max-width: 521px) {
   .image {
     width: 12rem;

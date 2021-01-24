@@ -351,6 +351,7 @@ intro */
   box-shadow: -0.7rem -0.7rem var(--clr-navbar-2);
   border-bottom-right-radius: 30%;
   width: 50%;
+  height: 20vw;
   max-width: 50rem;
   max-height: 25rem;
 }
@@ -359,6 +360,9 @@ intro */
   width: 100%;
   border-bottom-right-radius: 30%;
   display: block;
+  height: 20vw;
+  max-height: 25rem;
+  object-fit: cover;
 }
 
 #imgRect {
@@ -392,15 +396,9 @@ intro */
   font-size: 5vw;
 }
 
-@media screen and (min-width: 2000px) {
-  .shortAbout .textContainer {
-    font-size: 2vw;
-  }
-}
-
 @media screen and (max-width: 700px) {
   .aboutImg {
-    box-shadow: -3vh -3vh var(--clr-navbar-2), 1vh 1vh var(--clr-intro-1);
+    box-shadow: -1vh -1vh var(--clr-navbar-2), 1vh 1vh var(--clr-intro-1);
   }
   .shortAbout .imgContainer {
     width: 20rem;
@@ -423,6 +421,8 @@ intro */
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 1% 2%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
 }
 
 .container {
@@ -433,6 +433,7 @@ intro */
 
   border-radius: 20%;
   flex: 0 0 auto;
+  background: var(--clr-navbar-2);
 }
 
 .image {
@@ -473,7 +474,8 @@ intro */
 }
 
 .container:hover .image {
-  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  opacity: 0.1;
 }
 
 .container:hover .defaultMiddle {
@@ -488,9 +490,9 @@ intro */
 .defaultText {
   background-color: #f4f4f4c7;
   font-weight: bold;
-  text-shadow: 0.5px 0.5px white;
+  text-shadow: 0.3px 0.3px white;
   color: var(--clr-navbar-2);
-  font-size: 16px;
+  font-size: 20px;
   padding: 16px 33px;
 }
 
@@ -498,18 +500,19 @@ intro */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-navbar-2);
   color: white;
   font-size: 16px;
-  padding: 50px 32px;
+  padding: 40px 12px;
   height: 5rem;
 }
 
 .gridBtn {
   display: inline-block;
   border: none;
-  width: 4rem;
-  height: 4rem;
+  width: 5vw;
+  height: 5vw;
+  max-width: 4rem;
+  max-height: 4rem;
   margin-top: 1rem;
   text-decoration: none;
   background: var(--clr-navbar-3);
@@ -605,6 +608,64 @@ button:focus {
   font-size: 40px;
 }
 
+/* mobile stuff */
+.mobileContainer {
+  width: 31rem;
+  height: 15rem;
+  border: solid 0.45rem var(--clr-navbar-2);
+  border-radius: 3rem;
+  flex: 0 0 auto;
+  display: none;
+  margin: 1%;
+}
+
+.mobileFirst {
+  border-radius: 0rem 0rem 3rem 3rem;
+}
+
+.mobileContainer .image {
+  opacity: 0.2;
+  display: block;
+  width: 31rem;
+  height: 15rem;
+  max-width: 31rem;
+  object-fit: cover;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 2.5rem;
+}
+
+.mobileContainer .mobileFirstImg {
+  border-radius: 0rem 0rem 2.5rem 2.5rem;
+}
+
+.mobileMiddle {
+  position: relative;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.mobileMiddle p {
+  padding: 0rem 1rem;
+}
+
+.mobileMiddle .gridBtn {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  .text {
+    padding: 50px 0.5vw;
+  }
+  .container .gridBtn {
+    margin-top: 0.5rem;
+  }
+}
+
 @media screen and (max-width: 790px) {
   .shortAbout {
     display: none;
@@ -629,6 +690,10 @@ button:focus {
     margin-right: 1%;
   }
 
+  .parent .container {
+    display: none;
+  }
+
   .parent .childB {
     display: flex;
   }
@@ -648,37 +713,10 @@ button:focus {
     width: 14rem;
     height: 14rem;
   }
-}
 
-/* mobile stuff */
-.mobileContainer {
-  width: 31rem;
-  height: 15rem;
-  border: solid 0.45rem var(--clr-navbar-2);
-  border-radius: 3rem;
-  flex: 0 0 auto;
-}
-
-.mobileContainer,
-.mobileFirst {
-  border-radius: 0rem 0rem 3rem 3rem;
-}
-
-.mobileContainer .image {
-  opacity: 0.3;
-  display: block;
-  width: 31rem;
-  height: 15rem;
-  max-width: 31rem;
-  object-fit: cover;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-  border-radius: 2.5rem;
-}
-
-.mobileContainer .image,
-.mobileFirstImg {
-  border-radius: 0rem 0rem 2.5rem 2.5rem;
+  .mobileContainer {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 521px) {
@@ -698,6 +736,14 @@ button:focus {
   .mobileBioImg {
     width: 11rem;
     height: 11rem;
+  }
+
+  .mobileContainer {
+    width: 24rem;
+  }
+
+  .mobileContainer .image {
+    width: 24rem;
   }
 }
 @media screen and (max-width: 420px) {

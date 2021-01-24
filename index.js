@@ -1,35 +1,35 @@
 //Blog Grid
-const gridChild = $('.child');
+// const gridChild = $('.child');
 
-const imgURL = 'images/Wave-at-Hampton-Beach.jpg';
+// const imgURL = 'images/Wave-at-Hampton-Beach.jpg';
 
-const setBgImg = () => {
-  gridChild.eq(0).css('backgound-image', `url(${imgURL})`);
-};
-setBgImg();
+// const setBgImg = () => {
+//   gridChild.eq(0).css('backgound-image', `url(${imgURL})`);
+// };
+// setBgImg();
 
-const originColor1 = $('.child').css('background-color');
+// const originColor1 = $('.child').css('background-color');
 
-let isGridChange = [];
-const classLength = document.getElementsByClassName('child').length;
+// let isGridChange = [];
+// const classLength = document.getElementsByClassName('child').length;
 
-for (let i = 0; i < classLength; i++) {
-  isGridChange.push(false);
-}
+// for (let i = 0; i < classLength; i++) {
+//   isGridChange.push(false);
+// }
 
-const handleBlogInfo = (itemKey) => {
-  if (!isGridChange[itemKey]) {
-    $('.child').eq(itemKey).css('transition', 'all 0.2s linear');
+// const handleBlogInfo = (itemKey) => {
+//   if (!isGridChange[itemKey]) {
+//     $('.child').eq(itemKey).css('transition', 'all 0.2s linear');
 
-    $('.child').eq(itemKey).css('background-color', 'yellow');
-    isGridChange[itemKey] = true;
-  } else {
-    $('.child').eq(itemKey).css('transition', 'all 0.2s linear');
+//     $('.child').eq(itemKey).css('background-color', 'yellow');
+//     isGridChange[itemKey] = true;
+//   } else {
+//     $('.child').eq(itemKey).css('transition', 'all 0.2s linear');
 
-    $('.child').eq(itemKey).css('background-color', originColor1);
-    isGridChange[itemKey] = false;
-  }
-};
+//     $('.child').eq(itemKey).css('background-color', originColor1);
+//     isGridChange[itemKey] = false;
+//   }
+// };
 
 //hover
 // gridChild.on('mouseenter', function () {

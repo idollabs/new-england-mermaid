@@ -48,3 +48,12 @@ const hamToggle = () => {
     x.style.display = 'block';
   }
 };
+
+const blogToggle = () => {
+  var x = document.getElementById('blogLinks');
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+  }
+};

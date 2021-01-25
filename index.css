@@ -275,6 +275,11 @@ header .headerNav .navBtn img {
   display: none;
 }
 
+.topnav #blogLinks {
+  padding-left: 20px;
+  display: none;
+}
+
 /* Style navigation menu links */
 .topnav a {
   color: var(--clr-navbar-1);
@@ -321,16 +326,30 @@ header .headerNav .navBtn img {
 ~
 intro */
 
+.contentImages {
+  float: left;
+}
 .aboutImg {
   display: block;
   width: 35vw;
   max-width: 20rem;
-  float: left;
   margin-top: 1rem;
   margin-right: 1.5rem;
   margin-bottom: 0.5rem;
   box-shadow: -0.8rem -0.8rem var(--clr-navbar-2),
     0.4rem 0.4rem var(--clr-intro-1);
+}
+
+.imageTextBox {
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 12px;
+  width: 35vw;
+  max-width: 20rem;
+  padding: 3px;
+  border: solid var(--clr-intro-1) 1px;
 }
 
 .shortAbout {
@@ -434,6 +453,7 @@ intro */
   border-radius: 20%;
   flex: 0 0 auto;
   background: var(--clr-navbar-2);
+  position: relative;
 }
 
 .image {
@@ -452,24 +472,19 @@ intro */
 .defaultMiddle {
   transition: 0.5s ease;
   opacity: 1;
-  position: relative;
-  top: -50%;
-  left: 50%;
+  position: absolute;
+  top: 43%;
   width: 100%;
 
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .middle {
   transition: 0.5s ease;
   opacity: 0;
-  position: relative;
-  top: -50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 10%;
+
   text-align: center;
 }
 
@@ -480,7 +495,6 @@ intro */
 
 .container:hover .defaultMiddle {
   opacity: 0;
-  display: none;
 }
 
 .container:hover .middle {
@@ -764,6 +778,16 @@ button:focus {
   .mobileBioImg {
     width: 9rem;
     height: 9rem;
+  }
+
+  .mobileContainer {
+    width: 20rem;
+    height: 18rem;
+  }
+
+  .mobileContainer .image {
+    width: 20rem;
+    height: 18rem;
   }
 }
 

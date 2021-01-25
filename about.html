@@ -39,8 +39,7 @@
               </div>
             </li>
             <div class="dropdown">
-              <button class="dropbtn">About</button>
-
+              <a href="about.html"> <button class="dropbtn">About</button></a>
               <div class="dropdown-content">
                 <a href="about.html">
                   <img id="aboutDoor" src="images/front-door.jpg" alt="Enter"
@@ -51,12 +50,9 @@
               <div class="dropdown">
                 <button class="dropbtn">Blogs</button>
                 <div class="dropdown-content">
-                  <a class="dropLink" href="#"
-                    >Link 1 sdzfsfdcgbfdsbf gbxdfbd</a
-                  >
-                  <a class="dropLink" href="#">Link 2</a>
-                  <a class="dropLink" href="#"
-                    >Link 3 dfzcxfdsbfxbf fgxxbdfsbd</a
+                  <a class="dropLink" href="#">Geeking out with Deb</a>
+                  <a class="dropLink" style="font-style: italic; color: gray"
+                    >Coming Soon</a
                   >
                 </div>
               </div>
@@ -71,12 +67,17 @@
 
         <!-- Top Navigation Menu -->
         <div class="topnav">
-          <a href="#home" class="#active">New England Mermaid</a>
+          <a href="index.html" class="#active">New England Mermaid</a>
           <!-- Navigation links (hidden by default) -->
           <div id="myLinks">
-            <a href="#news">News</a>
+            <a href="about.html">About</a>
+            <a onclick="blogToggle()">Blogs</a>
+            <div id="blogLinks">
+              <a href="#blogs"> Geeking out with Deb</a>
+              <a href="#blogs"> From Behind the Fish</a>
+              <a href="#blogs"> Ocean Musings</a>
+            </div>
             <a href="#contact">Contact</a>
-            <a href="#about">About</a>
           </div>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
           <a href="javascript:void(0);" class="icon" onclick="hamToggle()">
@@ -88,7 +89,13 @@
       <!-- <div class="waves"></div> -->
       <main>
         <article class="content">
-          <img class="aboutImg" src="/images/mermaidpic.jpg" />
+          <div class="contentImages">
+            <img class="aboutImg" src="/images/mermaidpic.jpg" />
+            <article class="imageTextBox">Me (Deb) as a mermaid</article>
+            <br />
+            <img class="aboutImg" src="/images/front-door.jpg" />
+          </div>
+
           <p>
             Sometimes I think I was meant to live underwater! I’m much more
             graceful there. On land, my feet always seem to find something to

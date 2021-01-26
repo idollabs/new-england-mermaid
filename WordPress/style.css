@@ -263,6 +263,8 @@ header .headerNav .navBtn img {
   padding: 0.5rem;
   width: 9rem;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 #aboutDoor:hover {
@@ -332,6 +334,41 @@ header .headerNav .navBtn img {
 .pageTitle {
   text-align: center;
   font-size: 32px;
+}
+
+.wpContent {
+  margin: 2% 5%;
+}
+.wpContent a {
+  color: var(--clr-navbar-3);
+}
+
+.wpContent img {
+  object-fit: cover;
+}
+
+.wpContent .media {
+  display: flex;
+  background: var(--clr-intro-1);
+  padding: 15px;
+  border-radius: 2rem;
+  margin-bottom: 15px;
+}
+
+.wpContent .media .media-body {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryTitle {
+  text-align: center;
+  font-size: 32px;
+}
+
+.categoryTitle a {
+  color: black;
+  text-decoration: none;
 }
 
 /* 
@@ -605,6 +642,7 @@ button:focus {
   height: 30.6vw;
   max-height: 30rem;
   max-width: 30rem;
+  object-fit: cover;
 
   backface-visibility: hidden;
   border-top-left-radius: 0%;
@@ -825,16 +863,22 @@ footer {
   margin-top: 2rem;
 }
 
+.page-links h2 {
+  margin-bottom: 5px;
+}
+
 .page-links a {
   display: inline-block;
   border: 1px solid #ddd;
   padding: 5px 10px;
   line-height: 1;
   margin-right: 10px;
+  background: var(--clr-navbar-2);
+  color: white;
 }
 
 .page-links a:hover {
-  background: #222;
-  color: #fff;
+  background: var(--clr-navbar-4);
+  color: black;
   border-color: #222;
 }

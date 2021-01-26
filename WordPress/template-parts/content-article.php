@@ -9,7 +9,7 @@
                     the_tags('<span class="tag"><i class="fa fa-tag"></i>','</span><span class="tag"><i class="fa fa-tag"></i>', '</span>');
                 ?>
 
-                <span class="comment"><a href="#comments"><i class='fa fa-comment'></i> <?php comments_number(); ?>, $one:string, $more:string, $post_id:integer|WP_Post )</a></span>
+                <span class="comment"><a href="#comments"><i class='fa fa-comment'></i> <?php comments_number(); ?></a></span>
             </div>
         </header>
                 

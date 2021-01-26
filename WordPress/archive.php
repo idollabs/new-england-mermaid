@@ -3,8 +3,11 @@
    get_header();
    ?> 
   
-		<article class="content px-3 py-5 p-md-5">
-	    
+		<article class="wpContent px-3 py-5 p-md-5">
+		
+		<h1 class='categoryTitle'><?php the_category(','); ?></h1>
+        <br/>
+
 		<?php
 			if(have_posts()){
 				while(have_posts()){

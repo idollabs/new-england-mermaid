@@ -33,13 +33,13 @@
           <ul>
             <li>
               <div class="dropdown">
-                <a href="index.html"> <button class="dropbtn">Home</button></a>
+                <a href="<?php echo get_option('siteurl'); ?>"> <button class="dropbtn">Home</button></a>
               </div>
             </li>
             <div class="dropdown">
-              <a href="about.html"> <button class="dropbtn">About</button></a>
+              <a href="<?php echo get_option('siteurl'); ?>/about"> <button class="dropbtn">About</button></a>
               <div class="dropdown-content">
-                <a href="about.html">
+                <a href="<?php echo get_option('siteurl'); ?>/about">
                   <img id="aboutDoor" src="<?php echo get_template_directory_uri(); ?>/assets/images/front-door.jpg" alt="Enter"
                 /></a>
               </div>
@@ -48,7 +48,7 @@
               <div class="dropdown">
                 <button class="dropbtn">Blogs</button>
                 <div class="dropdown-content">
-                  <a class="dropLink" href="#">Geeking out with Deb</a>
+                  <a class="dropLink" href="<?php echo get_option('siteurl'); ?>/category/geeking-out-with-deb/">Geeking out with Deb</a>
                   <a class="dropLink" style="font-style: italic; color: gray"
                     >Coming Soon</a
                   >
@@ -65,15 +65,15 @@
 
         <!-- Top Navigation Menu -->
         <div class="topnav">
-          <a href="index.html" class="#active">New England Mermaid</a>
+          <a href="<?php echo get_option('siteurl'); ?>" class="#active">New England Mermaid</a>
           <!-- Navigation links (hidden by default) -->
           <div id="myLinks">
-            <a href="about.html">About</a>
+            <a href="<?php echo get_option('siteurl'); ?>/about">About</a>
             <a id='blogOption'>Blogs</a>
             <div id="blogLinks">
-              <a href="#blogs"> Geeking out with Deb</a>
-              <a href="#blogs"> From Behind the Fish</a>
-              <a href="#blogs"> Ocean Musings</a>
+              <a href="<?php echo get_option('siteurl'); ?>/category/geeking-out-with-deb/"> Geeking out with Deb</a>
+              <a style="font-style: italic; color: #D3D3D3"
+                    >Coming Soon</a>
             </div>
             <a href="#contact">Contact</a>
           </div>

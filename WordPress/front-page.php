@@ -7,7 +7,7 @@ get_header();
         <!-- short about -->
         <article class="shortAbout">
           <div class="imgContainer">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/deb-diving-square.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Deb-coming-out-of-water.jpg" alt="" />
             <!-- <img id="imgSquare" src="images/mermaidpic.jpg" alt="" /> -->
           </div>
           <div class="textContainer">
@@ -16,7 +16,7 @@ get_header();
               <!-- Sometimes I think I was meant to live underwater! I’m much more
               graceful there... -->
               You can read my
-              <a href="./about.html" style="color: rgb(76, 141, 176)"
+              <a href="<?php echo get_option('siteurl'); ?>/about" style="color: rgb(76, 141, 176)"
                 >ABOUT ME</a
               >
               or check out my blogs below!
@@ -29,9 +29,9 @@ get_header();
           <!-- media query bio  -->
           <div class="container mobileBioA">
             <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/images/Deb-Looking-out-at-the-Ocean-Acadia-National-Park.jpg"
+              src="<?php echo get_template_directory_uri(); ?>/assets/images/Deb-coming-out-of-water.jpg"  
               alt="Avatar"
-              class="image"
+              class="mobileBioImg"
             />
           </div>
           <div class="childB mobileBioB">
@@ -65,7 +65,9 @@ get_header();
                 creatures, some tiny, some larger, that live in our oceans and
                 tidepools.
               </p>
+              <a href='<?php echo get_option('siteurl'); ?>/category/geeking-out-with-deb/'>
               <button class="gridBtn"><i class="fa fa-plus"></i></button>
+              </a>
             </div>
           </div>
           <div class="mobileContainer">
@@ -124,7 +126,9 @@ get_header();
                 creatures, some tiny, some larger, that live in our oceans and
                 tidepools.
               </div>
+              <a href='<?php echo get_option('siteurl'); ?>/category/geeking-out-with-deb/'>
               <button class="gridBtn"><i class="fa fa-plus"></i></button>
+              </a>
             </div>
           </div>
 

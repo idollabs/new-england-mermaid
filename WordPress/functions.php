@@ -75,6 +75,11 @@ function newEnglandMermaid_widget_areas(){
 
 add_action('widgets_init', 'newEnglandMermaid_widget_areas');
 
+function mytheme_custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
+
 
 ?>
 

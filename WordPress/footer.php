@@ -1,5 +1,5 @@
  <footer>
-        <div class="designer">Developed and designed by Andrew Dauphinais</div>
+        <div class="designer">Theme developed and designed by Andrew Dauphinais</div>
       </footer>
     </article>
 

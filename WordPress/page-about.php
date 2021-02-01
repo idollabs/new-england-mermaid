@@ -17,6 +17,11 @@
             <img class="aboutImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/mermaidpic.jpg" />
             <article class="imageTextBox">A rare sighting of the New England Mermaid out of the water in the Caribbean</article>
             <br />
+            <div id='mobileSecondImg'>
+            <img class="aboutImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/debdiving.jpg" />
+            <article class="imageTextBox">The New England Mermaid visiting with a friend</article>
+          </div>
+          <br/>
             <img class="aboutImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/front-door.jpg" />
             <article class="imageTextBox">The New England Mermaid’s home out of the water</article>
           </div>

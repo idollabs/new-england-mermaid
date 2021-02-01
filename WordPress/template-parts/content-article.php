@@ -5,13 +5,16 @@
                 <h1 class='pageTitle'><?php the_title(); ?></h1>
 
                 <div class='linkBox'>
+
+                <div >
+                <?php previous_post_link('%link', 'Previous Post', TRUE); ?>
+                </div>
+
                 <div>
                 <?php next_post_link( '%link', 'Next Post', TRUE ); ?>
                 </div>
                 
-                <div >
-                <?php previous_post_link('%link', 'Previous Post', TRUE); ?>
-                </div>
+               
                 </div>
                 
 
@@ -58,13 +61,16 @@
 
     <br/>
     <div class='linkBox'>
+
+         <div >
+            <?php previous_post_link('%link', 'Previous Post', TRUE); ?>
+        </div>
+
         <div>
             <?php next_post_link( '%link', 'Next Post', TRUE ); ?>
         </div>
         
-        <div >
-            <?php previous_post_link('%link', 'Previous Post', TRUE); ?>
-        </div>
+       
     </div>
     <br/>
 

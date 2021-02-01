@@ -77,7 +77,7 @@
             <div id="blogLinks">
               <a href="<?php echo get_option('siteurl'); ?>/category/geeking-out-with-deb/"> Geeking out with Deb</a>
               <a style="font-style: italic; color: #D3D3D3"
-                    >Coming Soon</a>
+                    >More Coming Soon</a>
             </div>
             <a href="<?php echo get_option('siteurl'); ?>/contact/">Contact</a>
           </div>

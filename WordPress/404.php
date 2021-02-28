@@ -101,7 +101,7 @@ Consider one of the following:
 
           <div class="container">
             <img
-              src="<?php echo get_template_directory_uri(); ?>/assets/images/Skate-screen-shot.jpg"
+              src="<?php echo get_template_directory_uri(); ?>/assets/images/Fish-Tail-for-Blog.jpg"
               alt="Avatar"
               class="image"
             />
@@ -135,7 +135,9 @@ Consider one of the following:
                 are profound and deep (deep like the ocean, get it? – ugh -
                 sorry). Sometimes I’m the only one who thinks that. That’s ok.
               </div>
-              <h2 style="font-style: italic; padding-top: 20px">Coming Soon</h2>
+              <a href='<?php echo get_option('siteurl'); ?>/category/ocean-musings/'>
+              <button class="gridBtn"><i class="fa fa-plus"></i></button>
+              </a>
             </div>
           </div>
         </div>

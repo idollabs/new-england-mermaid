@@ -51,6 +51,7 @@
                 <button class="dropbtn">Blogs</button>
                 <div class="dropdown-content">
                   <a class="dropLink" href="<?php echo get_option('siteurl'); ?>/category/geeking-out-with-deb/">Geeking out with Deb</a>
+                  <a class="dropLink" href="<?php echo get_option('siteurl'); ?>/category/ocean-musings/">Ocean Musings</a>
                   <a class="dropLink" style="font-style: italic; color: gray"
                     >More Coming Soon</a
                   >
@@ -76,6 +77,7 @@
             <a id='blogOption'>Blogs</a>
             <div id="blogLinks">
               <a href="<?php echo get_option('siteurl'); ?>/category/geeking-out-with-deb/"> Geeking out with Deb</a>
+              <a href="<?php echo get_option('siteurl'); ?>/category/ocean-musings/"> Ocean Musings</a>
               <a style="font-style: italic; color: #D3D3D3"
                     >More Coming Soon</a>
             </div>

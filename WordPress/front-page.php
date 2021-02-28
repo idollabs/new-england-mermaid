@@ -105,7 +105,9 @@ get_header();
                 are profound and deep (deep like the ocean, get it? – ugh -
                 sorry). Sometimes I’m the only one who thinks that. That’s ok.
               </p>
-              <h2 style="font-style: italic"><br />Coming Soon</h2>
+              <a href='<?php echo get_option('siteurl'); ?>/category/ocean-musings/'>
+              <button class="gridBtn"><i class="fa fa-plus"></i></button>
+              </a>
             </div>
           </div>
 
@@ -170,7 +172,9 @@ get_header();
                 are profound and deep (deep like the ocean, get it? – ugh -
                 sorry). Sometimes I’m the only one who thinks that. That’s ok.
               </div>
-              <h2 style="font-style: italic; padding-top: 20px">Coming Soon</h2>
+              <a href='<?php echo get_option('siteurl'); ?>/category/ocean-musings/'>
+              <button class="gridBtn"><i class="fa fa-plus"></i></button>
+              </a>
             </div>
           </div>
         </div>

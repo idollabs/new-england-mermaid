@@ -65,6 +65,20 @@
               </div>
               </a>
             </li>
+            <li>
+              <div class="dropdown">
+             
+                <button class="dropbtn">Subscribe</button>
+                <div class="dropdown-content" id="widget-dropdown">
+                <?php if ( is_active_sidebar( 'new-widget-area' ) ) : ?>
+                <div id="secondary-sidebar" class="new-widget-area">
+                <?php dynamic_sidebar( 'new-widget-area' ); ?>
+                </div>
+                <?php endif; ?>
+                </div>
+              </div>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -82,6 +96,13 @@
                     >More Coming Soon</a>
             </div>
             <a href="<?php echo get_option('siteurl'); ?>/contact/">Contact</a>
+            <div id='hamburger-widget'>
+              <?php if ( is_active_sidebar( 'new-widget-area' ) ) : ?>
+              <div id="secondary-sidebar" class="new-widget-area">
+              <?php dynamic_sidebar( 'new-widget-area' ); ?>
+              </div>
+            </div>
+            <?php endif; ?>
           </div>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
           <a class="icon" id='hamburger'>
